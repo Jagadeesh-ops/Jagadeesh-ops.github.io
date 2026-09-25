@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jagadeesh S N | Salesforce QA Engineer</title>
+
+  <meta name="description"
+        content="Jagadeesh S N - Salesforce QA Engineer with 4+ years of experience in Salesforce testing, Tosca automation, Boomi, API testing and BFSI.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #e8f0f7;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Navigation */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 17, 31, 0.95);
+      border-bottom: 1px solid #18334d;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4db8ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #c8d7e5;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4db8ff;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 20px;
+      background:
+        radial-gradient(circle at top right, #123b5c 0, transparent 35%),
+        radial-gradient(circle at bottom left, #092c47 0, transparent 35%);
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .hero h2 {
+      font-size: 25px;
+      color: #4db8ff;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      color: #b9c9d8;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 6px;
+      border-radius: 8px;
+      background: #168eea;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #42b5ff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #168eea;
+    }
+
+    /* Sections */
+
+    section {
+      padding: 80px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 34px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .section-title span {
+      color: #4db8ff;
+    }
+
+    .section-intro {
+      color: #aebdcc;
+      margin-bottom: 35px;
+      max-width: 850px;
+    }
+
+    /* About */
+
+    .about-box {
+      background: #0c1c2d;
+      border: 1px solid #183b57;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    /* Skills */
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: #0c1c2d;
+      border: 1px solid #183b57;
+      border-radius: 14px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      border-color: #168eea;
+    }
+
+    .skill-card h3 {
+      color: #4db8ff;
+      margin-bottom: 12px;
+    }
+
+    .skill-card p {
+      color: #b9c9d8;
+    }
+
+    /* Experience */
+
+    .timeline {
+      border-left: 2px solid #168eea;
+      padding-left: 30px;
+    }
+
+    .job {
+      background: #0c1c2d;
+      border: 1px solid #183b57;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    .job h3 {
+      color: #ffffff;
+      font-size: 22px;
+    }
+
+    .job .role {
+      color: #4db8ff;
+      font-weight: bold;
+    }
+
+    .job .date {
+      color: #8fa4b8;
+      font-size: 14px;
+      margin: 5px 0 15px;
+    }
+
+    .job ul {
+      padding-left: 20px;
+      color: #b9c9d8;
+    }
+
+    /* Projects */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #0c1c2d;
+      border: 1px solid #183b57;
+      border-radius: 15px;
+      padding: 28px;
+    }
+
+    .project h3 {
+      color: #4db8ff;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: #b9c9d8;
+    }
+
+    .tags {
+      margin-top: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 4px;
+      border-radius: 20px;
+      background: #102f48;
+      color: #72c8ff;
+      font-size: 12px;
+    }
+
+    /* Certifications */
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .cert {
+      background: #0c1c2d;
+      border-left: 4px solid #168eea;
+      padding: 22px;
+      border-radius: 10px;
+    }
+
+    .cert h3 {
+      font-size: 17px;
+      color: white;
+    }
+
+    .cert p {
+      color: #8fa4b8;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    /* Education */
+
+    .education {
+      background: #0c1c2d;
+      border: 1px solid #183b57;
+      border-radius: 14px;
+      padding: 25px;
+    }
+
+    .education h3 {
+      color: #4db8ff;
+    }
+
+    /* Contact */
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #b9c9d8;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #18334d;
+      color: #7f93a7;
+      font-size: 14px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 700px) {
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero h2 {
+        font-size: 20px;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav>
+    <div class="logo">Jagadeesh S N</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero -->
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <h1>Jagadeesh S N</h1>
+
+      <h2>Salesforce QA Engineer</h2>
+
+      <p>
+        Salesforce QA Engineer with 4+ years of experience in
+        Salesforce, web, API, automation and integration testing,
+        with strong experience in the BFSI domain.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/jagadeesh-s-n-ab414316b/"
+          target="_blank">
+          LinkedIn
+        </a>
+
+        <a
+          class="btn btn-outline"
+          href="https://github.com/Jagadeesh-ops"
+          target="_blank">
+          GitHub
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- About -->
+
+  <section id="about">
+
+    <h2 class="section-title">
+      About <span>Me</span>
+    </h2>
+
+    <div class="about-box">
+
+      <p>
+        I am a Salesforce QA Engineer with 4+ years of experience
+        delivering high-quality and reliable solutions in the BFSI
+        domain.
+      </p>
+
+      <br>
+
+      <p>
+        My experience includes Salesforce functional testing,
+        regression testing, API testing, integration validation,
+        test management, defect management and release validation.
+      </p>
+
+      <br>
+
+      <p>
+        I have hands-on experience with Sales Cloud, Service Cloud
+        and Experience Cloud, along with Boomi integrations.
+      </p>
+
+      <br>
+
+      <p>
+        I have experience across the STLC, including requirement
+        analysis, test design, test execution, defect tracking
+        and release validation.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills -->
+
+  <section id="skills">
+
+    <h2 class="section-title">
+      Technical <span>Skills</span>
+    </h2>
+
+    <p class="section-intro">
+      Technologies and QA capabilities I work with.
+    </p>
+
+    <div class="skill-grid">
+
+      <div class="skill-card">
+        <h3>Salesforce</h3>
+        <p>
+          Sales Cloud, Service Cloud, Experience Cloud,
+          Salesforce Inspector, Workbench and SOQL.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Testing</h3>
+        <p>
+          Functional, Regression, Integration, API, UAT,
+          Migration, RTM and Release Validation.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Automation</h3>
+        <p>
+          Tricentis Tosca, Provar, Copado Robotic Testing
+          and Playwright.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Integration & Tools</h3>
+        <p>
+          Boomi, Postman and Azure DevOps.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>QA Processes</h3>
+        <p>
+          STLC, Test Management, Defect Management,
+          Test Design and Release Validation.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Domain</h3>
+        <p>
+          Banking, Financial Services and Insurance (BFSI).
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Experience -->
+
+  <section id="experience">
+
+    <h2 class="section-title">
+      Professional <span>Experience</span>
+    </h2>
+
+    <div class="timeline">
+
+      <div class="job">
+
+        <h3>Altimetrik</h3>
+
+        <div class="role">
+          Quality Engineer
+        </div>
+
+        <div class="date">
+          Apr 2026 – Present · Bengaluru · Hybrid
+        </div>
+
+        <ul>
+          <li>Salesforce QA and quality engineering.</li>
+          <li>Functional and regression testing.</li>
+          <li>API and integration validation.</li>
+          <li>Boomi integration testing.</li>
+          <li>Test management and defect management.</li>
+          <li>Azure DevOps.</li>
+        </ul>
+
+      </div>
+
+
+      <div class="job">
+
+        <h3>SLK</h3>
+
+        <div class="role">
+          Software Engineer
+        </div>
+
+        <div class="date">
+          Nov 2021 – Apr 2026 · Bengaluru · Hybrid
+        </div>
+
+        <ul>
+          <li>Salesforce testing and quality assurance.</li>
+          <li>Functional and regression testing.</li>
+          <li>API and integration testing.</li>
+          <li>Tosca automation.</li>
+          <li>Boomi and Azure DevOps.</li>
+          <li>Defect management and release validation.</li>
+        </ul>
+
+        <br>
+
+        <p>
+          Continued into Altimetrik following the transition
+          from SLK in April 2026.
+        </p>
+
+      </div>
+
+
+      <div class="job">
+
+        <h3>NMDC Limited</h3>
+
+        <div class="role">
+          Apprentice
+        </div>
+
+        <div class="date">
+          Sep 2021 – Nov 2021 · Sandur, Karnataka
+        </div>
+
+        <p>
+          Completed an apprenticeship as part of the early
+          stage of my professional career.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <h2 class="section-title">
+      Featured <span>Projects</span>
+    </h2>
+
+    <div class="project-grid">
+
+
+      <div class="project">
+
+        <h3>Salesforce Decommissioning Project</h3>
+
+        <p>
+          Worked on a Salesforce decommissioning initiative
+          involving validation of functionality, integrations
+          and impacted business processes during the transition
+          and retirement of Salesforce components.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Salesforce</span>
+          <span class="tag">Sales Cloud</span>
+          <span class="tag">Service Cloud</span>
+          <span class="tag">Experience Cloud</span>
+          <span class="tag">Boomi</span>
+          <span class="tag">API Testing</span>
+          <span class="tag">Regression</span>
+          <span class="tag">Azure DevOps</span>
+        </div>
+
+      </div>
+
+
+      <div class="project">
+
+        <h3>Playwright Automation</h3>
+
+        <p>
+          Automation project demonstrating Playwright-based
+          testing and automation capabilities.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Playwright</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Testing</span>
+        </div>
+
+        <br>
+
+        <a
+          class="btn"
+          href="https://github.com/Jagadeesh-ops"
+          target="_blank">
+          View on GitHub
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- Certifications -->
+
+  <section id="certifications">
+
+    <h2 class="section-title">
+      <span>Certifications</span>
+    </h2>
+
+    <div class="cert-grid">
+
+      <div class="cert">
+        <h3>Salesforce Certified Administrator</h3>
+        <p>Salesforce · Oct 2025</p>
+      </div>
+
+      <div class="cert">
+        <h3>Copado Robotic Testing</h3>
+        <p>Copado · Jun 2025</p>
+      </div>
+
+      <div class="cert">
+        <h3>Provar Automation Essentials</h3>
+        <p>Provar · Feb 2025</p>
+      </div>
+
+      <div class="cert">
+        <h3>Provar Automation Advanced</h3>
+        <p>Provar · Jul 2025</p>
+      </div>
+
+      <div class="cert">
+        <h3>Tricentis Automation Specialist Level 2</h3>
+        <p>Tricentis · Oct 2022</p>
+      </div>
+
+      <div class="cert">
+        <h3>Tricentis Automation Specialist Level 1</h3>
+        <p>Tricentis · Sep 2022</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Education -->
+
+  <section id="education">
+
+    <h2 class="section-title">
+      <span>Education</span>
+    </h2>
+
+    <div class="education">
+
+      <h3>
+        Bachelor of Engineering – Computer Science
+      </h3>
+
+      <p>
+        Ballari Institute of Technology and Management
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+
+  <section id="contact" class="contact">
+
+    <h2 class="section-title">
+      Get In <span>Touch</span>
+    </h2>
+
+    <p>
+      Interested in connecting or discussing Salesforce QA
+      and automation opportunities?
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://www.linkedin.com/in/jagadeesh-s-n-ab414316b/"
+        target="_blank">
+        LinkedIn
+      </a>
+
+      <a
+        class="btn btn-outline"
+        href="https://github.com/Jagadeesh-ops"
+        target="_blank">
+        GitHub
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    © 2026 Jagadeesh S N · Salesforce QA Engineer
+
+  </footer>
+
+</body>
+</html>
