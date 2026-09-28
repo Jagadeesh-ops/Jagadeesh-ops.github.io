@@ -286,6 +286,12 @@
       transition: 0.3s;
     }
 
+    .cert:hover {
+      transform: translateY(-5px);
+      border-left-color: #42b5ff;
+      background: #10253a;
+    }
+
     .cert h3 {
       font-size: 17px;
       color: white;
@@ -316,12 +322,6 @@
       text-decoration: none;
     }
 
-    .cert-link:hover {
-      transform: translateY(-5px);
-      border-left-color: #42b5ff;
-      background: #10253a;
-    }
-
     /* Education */
 
     .education {
@@ -341,9 +341,22 @@
       text-align: center;
     }
 
-    .contact p {
-      color: #b9c9d8;
-      margin: 10px 0;
+    .contact-subtitle {
+      color: #aebdcc;
+      margin: 10px 0 12px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      color: #4db8ff;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 5px;
+      transition: 0.3s;
+    }
+
+    .contact-email:hover {
+      color: #72c8ff;
     }
 
     /* Footer */
@@ -964,189 +977,51 @@
   </section>
 
 
-<!-- Contact -->
+  <!-- Contact -->
 
-<style>
-  /* Contact Section */
+  <section id="contact" class="contact">
 
-  .contact {
-    text-align: center;
-  }
+    <h2 class="section-title">
+      Get In <span>Touch</span>
+    </h2>
 
-  .contact-subtitle {
-    color: #aebdcc;
-    margin-bottom: 12px;
-  }
+    <p class="contact-subtitle">
+      Have an opportunity or want to connect? Feel free to reach out.
+    </p>
 
-  .contact-email {
-    display: inline-block;
-    color: #4db8ff;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 30px;
-    transition: 0.3s;
-  }
+    <a
+      class="contact-email"
+      href="mailto:jagadeeshsn9@gmail.com">
+      ✉ jagadeeshsn9@gmail.com
+    </a>
 
-  .contact-email:hover {
-    color: #72c8ff;
-  }
+    <div class="buttons">
 
-  .contact-form {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 28px;
-    background: #0c1c2d;
-    border: 1px solid #183b57;
-    border-radius: 15px;
-  }
+      <a
+        class="btn"
+        href="https://www.linkedin.com/in/jagadeesh-s-n-ab414316b/"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn
+      </a>
 
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 14px 16px;
-    margin-bottom: 15px;
-    background: #07111f;
-    border: 1px solid #28506d;
-    border-radius: 8px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    outline: none;
-  }
-
-  .contact-form input::placeholder,
-  .contact-form textarea::placeholder {
-    color: #71869a;
-  }
-
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: #168eea;
-    box-shadow: 0 0 0 2px rgba(22, 142, 234, 0.12);
-  }
-
-  .contact-form textarea {
-    resize: vertical;
-  }
-
-  .send-btn {
-    border: none;
-    cursor: pointer;
-    margin: 5px 0 0;
-  }
-
-  @media (max-width: 700px) {
-
-    .form-row {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-
-    .contact-form {
-      padding: 20px;
-    }
-
-  }
-</style>
-
-
-<section id="contact" class="contact">
-
-  <h2 class="section-title">
-    Get In <span>Touch</span>
-  </h2>
-
-  <p class="contact-subtitle">
-    Have an opportunity or want to connect? Send me a message.
-  </p>
-
-  <a
-    class="contact-email"
-    href="mailto:jagadeeshsn9@gmail.com">
-    ✉ jagadeeshsn9@gmail.com
-  </a>
-
-
-  <form
-    class="contact-form"
-    action="https://formspree.io/f/xkjgpayw"
-    method="POST">
-
-    <div class="form-row">
-
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required>
-
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required>
+      <a
+        class="btn btn-outline"
+        href="https://github.com/Jagadeesh-ops"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub
+      </a>
 
     </div>
 
-
-    <input
-      type="text"
-      name="subject"
-      placeholder="Subject"
-      required>
-
-
-    <textarea
-      name="message"
-      rows="5"
-      placeholder="Your Message"
-      required></textarea>
-
-
-    <button
-      type="submit"
-      class="btn send-btn">
-      Send Message →
-    </button>
-
-  </form>
-
-
-  <div class="buttons">
-
-    <a
-      class="btn"
-      href="https://www.linkedin.com/in/jagadeesh-s-n-ab414316b/"
-      target="_blank"
-      rel="noopener noreferrer">
-      LinkedIn
-    </a>
-
-    <a
-      class="btn btn-outline"
-      href="https://github.com/Jagadeesh-ops"
-      target="_blank"
-      rel="noopener noreferrer">
-      GitHub
-    </a>
-
-  </div>
-
-</section>
+  </section>
 
 
   <!-- Footer -->
 
   <footer>
-
     © 2026 Jagadeesh S N · Salesforce QA Engineer
-
   </footer>
 
 </body>
