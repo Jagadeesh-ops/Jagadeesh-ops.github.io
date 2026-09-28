@@ -964,7 +964,97 @@
   </section>
 
 
- <!-- Contact -->
+<!-- Contact -->
+
+<style>
+  /* Contact Section */
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    color: #aebdcc;
+    margin-bottom: 12px;
+  }
+
+  .contact-email {
+    display: inline-block;
+    color: #4db8ff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+  }
+
+  .contact-email:hover {
+    color: #72c8ff;
+  }
+
+  .contact-form {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 28px;
+    background: #0c1c2d;
+    border: 1px solid #183b57;
+    border-radius: 15px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    background: #07111f;
+    border: 1px solid #28506d;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #71869a;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #168eea;
+    box-shadow: 0 0 0 2px rgba(22, 142, 234, 0.12);
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+  }
+
+  .send-btn {
+    border: none;
+    cursor: pointer;
+    margin: 5px 0 0;
+  }
+
+  @media (max-width: 700px) {
+
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .contact-form {
+      padding: 20px;
+    }
+
+  }
+</style>
+
 
 <section id="contact" class="contact">
 
@@ -972,131 +1062,61 @@
     Get In <span>Touch</span>
   </h2>
 
-  <p class="section-intro contact-intro">
-    Have a question, opportunity, or just want to connect?
-    Feel free to send me a message.
+  <p class="contact-subtitle">
+    Have an opportunity or want to connect? Send me a message.
   </p>
 
-  <div class="contact-card">
+  <a
+    class="contact-email"
+    href="mailto:jagadeeshsn9@gmail.com">
+    ✉ jagadeeshsn9@gmail.com
+  </a>
 
-    <!-- Contact Information -->
 
-    <div class="contact-info">
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/xkjgpayw"
+    method="POST">
 
-      <h3>
-        Let's Connect
-      </h3>
+    <div class="form-row">
 
-      <p>
-        I'm always open to discussing Salesforce QA,
-        automation, testing opportunities and professional
-        collaborations.
-      </p>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
 
-      <a
-        class="email-link"
-        href="mailto:jagadeeshsn9@gmail.com">
-
-        <span class="email-icon">✉</span>
-
-        <span>
-          jagadeeshsn9@gmail.com
-        </span>
-
-      </a>
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required>
 
     </div>
 
 
-    <!-- Contact Form -->
-
-    <form
-      class="contact-form"
-      action="https://formspree.io/f/xkjgpayw"
-      method="POST">
-
-      <div class="form-row">
-
-        <div class="form-group">
-
-          <label for="name">
-            Your Name
-          </label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required>
-
-        </div>
+    <input
+      type="text"
+      name="subject"
+      placeholder="Subject"
+      required>
 
 
-        <div class="form-group">
-
-          <label for="email">
-            Your Email
-          </label>
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required>
-
-        </div>
-
-      </div>
+    <textarea
+      name="message"
+      rows="5"
+      placeholder="Your Message"
+      required></textarea>
 
 
-      <div class="form-group">
+    <button
+      type="submit"
+      class="btn send-btn">
+      Send Message →
+    </button>
 
-        <label for="subject">
-          Subject
-        </label>
+  </form>
 
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="What would you like to discuss?"
-          required>
-
-      </div>
-
-
-      <div class="form-group">
-
-        <label for="message">
-          Message
-        </label>
-
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          placeholder="Write your message here..."
-          required></textarea>
-
-      </div>
-
-
-      <button
-        type="submit"
-        class="btn send-btn">
-
-        Send Message →
-
-      </button>
-
-    </form>
-
-  </div>
-
-
-  <!-- Social Links -->
 
   <div class="buttons">
 
