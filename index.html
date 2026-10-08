@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jagadeesh S N | Salesforce QA Engineer</title>
+  <title>Jagadeesh S N | Salesforce QA Engineer | Test Automation & API Testing</title>
 
   <meta
     name="description"
-    content="Jagadeesh S N - Salesforce QA Engineer with 5 years of experience in Salesforce testing, automation, API testing, integration testing, Boomi and BFSI."
+    content="Jagadeesh S N is a Salesforce QA Engineer with 5 years of experience in Salesforce testing, functional testing, regression testing, API testing, integration testing, test automation and BFSI."
   >
 
+  <meta name="author" content="Jagadeesh S N">
+  <meta name="robots" content="index, follow">
+
+  <meta
+    property="og:title"
+    content="Jagadeesh S N | Salesforce QA Engineer"
+  >
+
+  <meta
+    property="og:description"
+    content="Salesforce QA Engineer with experience in Salesforce testing, automation, API testing, integration testing and BFSI."
+  >
+
+  <meta property="og:type" content="website">
+
   <style>
+
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html {
       scroll-behavior: smooth;
     }
 
@@ -31,18 +56,32 @@
       text-decoration: none;
     }
 
-    /* Navigation */
+    section {
+      padding: 80px 8%;
+      max-width: 1200px;
+      margin: auto;
+      scroll-margin-top: 90px;
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
 
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
+
       background: rgba(7, 17, 31, 0.96);
       border-bottom: 1px solid #18334d;
+
       padding: 18px 8%;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       backdrop-filter: blur(10px);
     }
 
@@ -69,43 +108,67 @@
       color: #4db8ff;
     }
 
-    /* Hero */
+
+    /* =========================================================
+       HERO
+    ========================================================= */
 
     .hero {
       min-height: 88vh;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
+
       padding: 70px 20px;
 
       background:
-        radial-gradient(circle at top right, #123b5c 0, transparent 35%),
-        radial-gradient(circle at bottom left, #092c47 0, transparent 35%);
+        radial-gradient(
+          circle at top right,
+          #123b5c 0,
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at bottom left,
+          #092c47 0,
+          transparent 35%
+        );
     }
 
     .hero-content {
-      max-width: 900px;
+      max-width: 950px;
     }
 
     .hero h1 {
       font-size: 58px;
       margin-bottom: 12px;
       color: #ffffff;
+      letter-spacing: -1px;
     }
 
     .hero h2 {
-      font-size: 26px;
+      font-size: 25px;
+      line-height: 1.4;
       color: #4db8ff;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .hero p {
-      max-width: 780px;
+      max-width: 800px;
       margin: auto;
+
       color: #b9c9d8;
+
       font-size: 18px;
+      line-height: 1.8;
     }
+
+
+    /* =========================================================
+       BUTTONS
+    ========================================================= */
 
     .buttons {
       margin-top: 30px;
@@ -113,20 +176,30 @@
 
     .btn {
       display: inline-block;
+
       padding: 12px 22px;
       margin: 6px;
+
       border-radius: 8px;
+
       background: #168eea;
-      color: white;
+      color: #ffffff;
+
       font-weight: bold;
-      transition: 0.3s;
+
       border: 1px solid #168eea;
+
+      transition: 0.3s;
     }
 
     .btn:hover {
       background: #42b5ff;
       border-color: #42b5ff;
+
       transform: translateY(-2px);
+
+      box-shadow:
+        0 8px 20px rgba(22, 142, 234, 0.25);
     }
 
     .btn-outline {
@@ -139,13 +212,10 @@
       background: #168eea;
     }
 
-    /* Sections */
 
-    section {
-      padding: 80px 8%;
-      max-width: 1200px;
-      margin: auto;
-    }
+    /* =========================================================
+       SECTION TITLES
+    ========================================================= */
 
     .section-title {
       font-size: 34px;
@@ -163,50 +233,85 @@
       max-width: 850px;
     }
 
-    /* About */
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
 
     .about-box {
       background: #0c1c2d;
+
       border: 1px solid #183b57;
       border-radius: 15px;
+
       padding: 30px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+
+      transition: 0.3s;
+    }
+
+    .about-box:hover {
+      box-shadow:
+        0 12px 35px rgba(22, 142, 234, 0.12);
     }
 
     .about-box p {
       color: #b9c9d8;
     }
 
-    /* Skills */
+
+    /* =========================================================
+       SKILLS
+    ========================================================= */
 
     .skill-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
       gap: 20px;
     }
 
     .skill-card {
       background: #0c1c2d;
+
       border: 1px solid #183b57;
       border-radius: 14px;
+
       padding: 25px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+
       transition: 0.3s;
     }
 
     .skill-card:hover {
       transform: translateY(-5px);
+
       border-color: #168eea;
+
+      box-shadow:
+        0 12px 35px rgba(22, 142, 234, 0.12);
     }
 
     .skill-card h3 {
       color: #4db8ff;
       margin-bottom: 12px;
+      font-size: 19px;
     }
 
     .skill-card p {
       color: #b9c9d8;
     }
 
-    /* Experience */
+
+    /* =========================================================
+       EXPERIENCE
+    ========================================================= */
 
     .timeline {
       border-left: 2px solid #168eea;
@@ -215,15 +320,30 @@
 
     .job {
       background: #0c1c2d;
+
       border: 1px solid #183b57;
       border-radius: 14px;
+
       padding: 25px;
       margin-bottom: 25px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+
+      transition: 0.3s;
+    }
+
+    .job:hover {
+      border-color: #168eea;
+
+      box-shadow:
+        0 12px 35px rgba(22, 142, 234, 0.12);
     }
 
     .job h3 {
       color: #ffffff;
       font-size: 22px;
+      margin-bottom: 3px;
     }
 
     .job .role {
@@ -242,23 +362,65 @@
       color: #b9c9d8;
     }
 
+    .job li {
+      margin-bottom: 8px;
+    }
+
     .job p {
       color: #b9c9d8;
     }
 
-    /* Projects */
+    .transition-note {
+      display: inline-block;
+
+      margin-top: 18px;
+
+      padding: 6px 12px;
+
+      border-radius: 20px;
+
+      background: #102f48;
+      color: #72c8ff;
+
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+
+    /* =========================================================
+       PROJECTS
+    ========================================================= */
 
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
       gap: 25px;
     }
 
     .project {
       background: #0c1c2d;
+
       border: 1px solid #183b57;
       border-radius: 15px;
+
       padding: 28px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+
+      border-color: #168eea;
+
+      box-shadow:
+        0 12px 35px rgba(22, 142, 234, 0.12);
     }
 
     .project h3 {
@@ -276,44 +438,65 @@
 
     .tag {
       display: inline-block;
+
       padding: 5px 10px;
       margin: 4px;
+
       border-radius: 20px;
+
       background: #102f48;
       color: #72c8ff;
+
       font-size: 12px;
     }
 
-    /* Certifications */
+
+    /* =========================================================
+       CERTIFICATIONS
+    ========================================================= */
 
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
       gap: 18px;
     }
 
     .cert {
       background: #0c1c2d;
+
       border-left: 4px solid #168eea;
+
       padding: 22px;
+
       border-radius: 10px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+
       transition: 0.3s;
     }
 
     .cert:hover {
       transform: translateY(-5px);
+
       border-left-color: #42b5ff;
+
       background: #10253a;
     }
 
     .cert h3 {
       font-size: 17px;
-      color: white;
+      color: #ffffff;
     }
 
     .cert p {
       color: #8fa4b8;
+
       margin-top: 5px;
+
       font-size: 14px;
     }
 
@@ -324,25 +507,43 @@
 
     .credential {
       display: inline-block;
+
       margin-top: 12px;
+
       color: #4db8ff;
+
       font-size: 14px;
       font-weight: bold;
     }
 
     .cert-link {
       display: block;
+
       color: inherit;
       text-decoration: none;
     }
 
-    /* Education */
+
+    /* =========================================================
+       EDUCATION
+    ========================================================= */
 
     .education {
       background: #0c1c2d;
+
       border: 1px solid #183b57;
       border-radius: 14px;
+
       padding: 25px;
+
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+
+      transition: 0.3s;
+    }
+
+    .education:hover {
+      border-color: #168eea;
     }
 
     .education h3 {
@@ -354,7 +555,10 @@
       color: #b9c9d8;
     }
 
-    /* Contact */
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
 
     .contact {
       text-align: center;
@@ -362,21 +566,73 @@
 
     .contact-subtitle {
       color: #aebdcc;
+
       margin: 10px auto 15px;
+
       max-width: 700px;
     }
 
-    /* Footer */
+
+    /* =========================================================
+       BACK TO TOP
+    ========================================================= */
+
+    .back-to-top {
+      position: fixed;
+
+      right: 25px;
+      bottom: 25px;
+
+      width: 45px;
+      height: 45px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #168eea;
+      color: #ffffff;
+
+      font-size: 22px;
+      font-weight: bold;
+
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.35);
+
+      transition: 0.3s;
+
+      z-index: 999;
+    }
+
+    .back-to-top:hover {
+      background: #42b5ff;
+
+      transform: translateY(-3px);
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
 
     footer {
       text-align: center;
+
       padding: 25px;
+
       border-top: 1px solid #18334d;
+
       color: #7f93a7;
+
       font-size: 14px;
     }
 
-    /* Mobile */
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
 
     @media (max-width: 900px) {
 
@@ -387,15 +643,20 @@
 
       nav ul {
         gap: 14px;
+
         flex-wrap: wrap;
+
         justify-content: center;
       }
+
     }
+
 
     @media (max-width: 700px) {
 
       .hero {
         min-height: 80vh;
+
         padding: 60px 20px;
       }
 
@@ -426,13 +687,101 @@
       .job {
         padding: 20px;
       }
+
+      .back-to-top {
+        right: 18px;
+        bottom: 18px;
+
+        width: 40px;
+        height: 40px;
+      }
+
     }
+
+
+    /* =========================================================
+       PRINT / PDF
+    ========================================================= */
+
+    @media print {
+
+      body {
+        background: #ffffff;
+        color: #111111;
+      }
+
+      nav,
+      .buttons,
+      .back-to-top {
+        display: none !important;
+      }
+
+      .hero {
+        min-height: auto;
+
+        padding: 40px 20px;
+
+        background: #ffffff;
+      }
+
+      .hero h1,
+      .section-title,
+      .job h3 {
+        color: #111111;
+      }
+
+      .hero h2,
+      .section-title span,
+      .job .role,
+      .education h3 {
+        color: #168eea;
+      }
+
+      .hero p,
+      .about-box p,
+      .skill-card p,
+      .job ul,
+      .job p,
+      .project p,
+      .education p {
+        color: #333333;
+      }
+
+      section {
+        padding: 35px 5%;
+
+        page-break-inside: avoid;
+      }
+
+      .about-box,
+      .skill-card,
+      .job,
+      .project,
+      .cert,
+      .education {
+        background: #ffffff;
+
+        border: 1px solid #cccccc;
+
+        box-shadow: none;
+      }
+
+      footer {
+        color: #555555;
+      }
+
+    }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- Navigation -->
+
+  <!-- =======================================================
+       NAVIGATION
+  ======================================================== -->
 
   <nav>
 
@@ -441,19 +790,47 @@
     </div>
 
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+
+      <li>
+        <a href="#highlights">Highlights</a>
+      </li>
+
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#certifications">Certifications</a>
+      </li>
+
+      <li>
+        <a href="#education">Education</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
     </ul>
 
   </nav>
 
 
-  <!-- Hero -->
+  <!-- =======================================================
+       HERO
+  ======================================================== -->
 
   <header class="hero">
 
@@ -464,20 +841,32 @@
       </h1>
 
       <h2>
-        Salesforce QA Engineer
+        Salesforce QA Engineer |
+        Test Automation |
+        API & Integration Testing
       </h2>
 
       <p>
         Salesforce QA Engineer with 5 years of experience in
-        Salesforce testing, functional testing, API testing,
-        automation, integration testing and release validation,
-        with strong experience in the BFSI domain.
+        functional testing, regression testing, API testing,
+        integration testing, test automation and release validation.
+        Experienced in Salesforce Sales Cloud, Service Cloud,
+        Experience Cloud, Boomi integrations and BFSI applications.
       </p>
+
 
       <div class="buttons">
 
         <a
           class="btn"
+          href="resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+          Download Resume
+        </a>
+
+        <a
+          class="btn btn-outline"
           href="https://www.linkedin.com/in/jagadeesh-s-n-ab414316b/"
           target="_blank"
           rel="noopener noreferrer">
@@ -499,7 +888,9 @@
   </header>
 
 
-  <!-- About -->
+  <!-- =======================================================
+       ABOUT
+  ======================================================== -->
 
   <section id="about">
 
@@ -510,34 +901,36 @@
     <div class="about-box">
 
       <p>
-        I am a Salesforce QA Engineer with 5 years of experience
-        in software quality assurance, Salesforce testing and
-        integration validation within the BFSI domain.
+        Salesforce QA Engineer with 5 years of experience in
+        software quality assurance, Salesforce testing, API testing,
+        integration testing and test automation within enterprise
+        BFSI environments.
       </p>
 
       <br>
 
       <p>
-        My experience includes Salesforce functional testing,
-        regression testing, API testing, integration testing,
-        test management, defect management and release validation.
+        Experienced in functional testing, regression testing,
+        system integration testing, UAT, migration testing,
+        end-to-end validation and release validation across
+        Salesforce applications.
       </p>
 
       <br>
 
       <p>
-        I have hands-on experience with Sales Cloud, Service Cloud
-        and Experience Cloud, along with Boomi integrations and
-        API validation.
+        Hands-on experience with Sales Cloud, Service Cloud and
+        Experience Cloud, along with Boomi integrations, Postman,
+        Salesforce Inspector, Workbench and SOQL.
       </p>
 
       <br>
 
       <p>
-        I have worked across the complete STLC, including
-        requirement analysis, test scenario creation, test case
-        design, test execution, defect tracking, regression
-        testing and release validation.
+        Experienced across the complete STLC, including requirement
+        analysis, test planning, test scenario and test case design,
+        execution, defect management, regression cycles and
+        release validation.
       </p>
 
     </div>
@@ -545,7 +938,9 @@
   </section>
 
 
-  <!-- Skills -->
+  <!-- =======================================================
+       SKILLS
+  ======================================================== -->
 
   <section id="skills">
 
@@ -558,7 +953,9 @@
       relevant to enterprise testing environments.
     </p>
 
+
     <div class="skill-grid">
+
 
       <div class="skill-card">
 
@@ -577,13 +974,12 @@
       <div class="skill-card">
 
         <h3>
-          Testing
+          Functional Testing
         </h3>
 
         <p>
-          Functional Testing, Regression Testing, Integration
-          Testing, API Testing, UAT, Migration Testing, RTM
-          and Release Validation.
+          Functional Testing, Regression Testing, UAT,
+          Migration Testing, End-to-End Testing and RTM.
         </p>
 
       </div>
@@ -592,7 +988,21 @@
       <div class="skill-card">
 
         <h3>
-          Automation
+          API Testing
+        </h3>
+
+        <p>
+          Postman, API validation, request and response validation,
+          integration testing and end-to-end API validation.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          Test Automation
         </h3>
 
         <p>
@@ -606,12 +1016,12 @@
       <div class="skill-card">
 
         <h3>
-          API & Integration
+          Integration
         </h3>
 
         <p>
-          Boomi, Postman, API validation, integration testing
-          and end-to-end validation.
+          Boomi integrations, data-flow validation,
+          system integration testing and end-to-end validation.
         </p>
 
       </div>
@@ -620,12 +1030,12 @@
       <div class="skill-card">
 
         <h3>
-          QA Processes
+          QA & Test Management
         </h3>
 
         <p>
-          STLC, Test Management, Defect Management, Test Design,
-          Requirement Analysis and Release Validation.
+          STLC, Test Planning, Test Design, Test Execution,
+          Defect Management, Regression and Release Validation.
         </p>
 
       </div>
@@ -634,35 +1044,99 @@
       <div class="skill-card">
 
         <h3>
-          Tools
+          Tools & Domain
         </h3>
 
         <p>
-          Azure DevOps, Salesforce Inspector, Workbench,
-          Postman and test automation tools.
+          Azure DevOps, Postman, Salesforce Inspector,
+          Workbench and BFSI domain.
         </p>
 
       </div>
 
-
-      <div class="skill-card">
-
-        <h3>
-          Domain
-        </h3>
-
-        <p>
-          Banking, Financial Services and Insurance (BFSI).
-        </p>
-
-      </div>
 
     </div>
 
   </section>
 
 
-  <!-- Experience -->
+  <!-- =======================================================
+       CAREER HIGHLIGHTS
+  ======================================================== -->
+
+  <section id="highlights">
+
+    <h2 class="section-title">
+      Career <span>Highlights</span>
+    </h2>
+
+    <div class="skill-grid">
+
+
+      <div class="skill-card">
+
+        <h3>
+          Salesforce QA
+        </h3>
+
+        <p>
+          5 years of experience in Salesforce quality assurance
+          across functional, regression and integration testing.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          Automation
+        </h3>
+
+        <p>
+          Experience with Tricentis Tosca, Provar,
+          Copado Robotic Testing and Playwright-based automation.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          API & Integration
+        </h3>
+
+        <p>
+          Hands-on experience in API validation, Boomi integration
+          testing and end-to-end system validation.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>
+          BFSI Domain
+        </h3>
+
+        <p>
+          Experience supporting quality assurance activities
+          for Banking, Financial Services and Insurance applications.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       EXPERIENCE
+  ======================================================== -->
 
   <section id="experience">
 
@@ -673,7 +1147,7 @@
     <div class="timeline">
 
 
-      <!-- Altimetrik -->
+      <!-- ALT​​IMETRIK -->
 
       <div class="job">
 
@@ -689,35 +1163,44 @@
           Apr 2026 – Present · Bengaluru · Hybrid
         </div>
 
+
         <ul>
+
           <li>
-            Perform Salesforce functional and regression testing
-            for enterprise applications.
+            Perform Salesforce functional, regression and
+            end-to-end testing for enterprise applications.
           </li>
 
           <li>
-            Validate APIs, integrations and end-to-end business
-            processes.
+            Design and execute test scenarios and test cases
+            based on functional and business requirements.
+          </li>
+
+          <li>
+            Validate APIs, integrations and business workflows
+            across connected enterprise systems.
           </li>
 
           <li>
             Perform Boomi integration testing and validate
-            data flow between systems.
+            data flow between Salesforce and integrated systems.
           </li>
 
           <li>
-            Support test planning, execution, defect management
-            and release validation.
+            Execute regression testing and support release
+            validation across QA environments.
           </li>
 
           <li>
-            Work with Azure DevOps for test and defect tracking.
+            Track test execution, defects and QA activities
+            using Azure DevOps.
           </li>
 
           <li>
-            Collaborate with development and business teams
-            throughout the QA lifecycle.
+            Collaborate with developers, business analysts
+            and stakeholders throughout the QA lifecycle.
           </li>
+
         </ul>
 
       </div>
@@ -739,48 +1222,50 @@
           Nov 2021 – Apr 2026 · Bengaluru · Hybrid
         </div>
 
+
         <ul>
 
           <li>
             Performed Salesforce functional, regression and
-            integration testing.
+            integration testing for enterprise applications.
           </li>
 
           <li>
-            Designed and executed test scenarios and test cases
-            based on business requirements.
+            Analyzed business requirements and designed test
+            scenarios and test cases covering functional workflows.
           </li>
 
           <li>
-            Performed API testing and integration validation.
-          </li>
-
-          <li>
-            Worked with Tricentis Tosca for test automation.
+            Executed API testing and validated integrations
+            between Salesforce and external systems.
           </li>
 
           <li>
             Performed Boomi integration testing and end-to-end
-            validation.
+            data-flow validation.
           </li>
 
           <li>
-            Managed defects and test activities using
-            Azure DevOps.
+            Worked with Tricentis Tosca for test automation
+            and automated regression validation.
           </li>
 
           <li>
-            Supported release validation and regression cycles.
+            Managed defects, test execution and QA activities
+            using Azure DevOps.
+          </li>
+
+          <li>
+            Supported regression cycles, defect retesting
+            and release validation.
           </li>
 
         </ul>
 
-        <br>
 
-        <p>
-          Continued into Altimetrik following the transition
-          from SLK in April 2026.
-        </p>
+        <div class="transition-note">
+          Organization transition · April 2026
+        </div>
 
       </div>
 
@@ -808,12 +1293,15 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
-  <!-- Projects -->
+  <!-- =======================================================
+       PROJECTS
+  ======================================================== -->
 
   <section id="projects">
 
@@ -824,7 +1312,7 @@
     <div class="project-grid">
 
 
-      <!-- Salesforce Decommissioning -->
+      <!-- SALESFORCE DECOMMISSIONING -->
 
       <div class="project">
 
@@ -840,23 +1328,47 @@
           of Salesforce components.
         </p>
 
+
         <div class="tags">
 
-          <span class="tag">Salesforce</span>
-          <span class="tag">Sales Cloud</span>
-          <span class="tag">Service Cloud</span>
-          <span class="tag">Experience Cloud</span>
-          <span class="tag">Boomi</span>
-          <span class="tag">API Testing</span>
-          <span class="tag">Regression Testing</span>
-          <span class="tag">Azure DevOps</span>
+          <span class="tag">
+            Salesforce
+          </span>
+
+          <span class="tag">
+            Sales Cloud
+          </span>
+
+          <span class="tag">
+            Service Cloud
+          </span>
+
+          <span class="tag">
+            Experience Cloud
+          </span>
+
+          <span class="tag">
+            Boomi
+          </span>
+
+          <span class="tag">
+            API Testing
+          </span>
+
+          <span class="tag">
+            Regression Testing
+          </span>
+
+          <span class="tag">
+            Azure DevOps
+          </span>
 
         </div>
 
       </div>
 
 
-      <!-- Playwright -->
+      <!-- PLAYWRIGHT -->
 
       <div class="project">
 
@@ -870,16 +1382,30 @@
           automated validation of application workflows.
         </p>
 
+
         <div class="tags">
 
-          <span class="tag">Playwright</span>
-          <span class="tag">Automation</span>
-          <span class="tag">Web Testing</span>
-          <span class="tag">QA</span>
+          <span class="tag">
+            Playwright
+          </span>
+
+          <span class="tag">
+            Automation
+          </span>
+
+          <span class="tag">
+            Web Testing
+          </span>
+
+          <span class="tag">
+            QA
+          </span>
 
         </div>
 
+
         <br>
+
 
         <a
           class="btn"
@@ -891,12 +1417,15 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
-  <!-- Certifications -->
+  <!-- =======================================================
+       CERTIFICATIONS
+  ======================================================== -->
 
   <section id="certifications">
 
@@ -908,10 +1437,11 @@
       Professional certifications and credentials.
     </p>
 
+
     <div class="cert-grid">
 
 
-      <!-- Salesforce Administrator -->
+      <!-- SALESFORCE ADMINISTRATOR -->
 
       <a
         class="cert cert-link"
@@ -938,7 +1468,7 @@
       </a>
 
 
-      <!-- Copado -->
+      <!-- COPADO -->
 
       <div class="cert">
 
@@ -961,7 +1491,7 @@
       </div>
 
 
-      <!-- Provar Essentials -->
+      <!-- PROVAR ESSENTIALS -->
 
       <div class="cert">
 
@@ -984,7 +1514,7 @@
       </div>
 
 
-      <!-- Provar Advanced -->
+      <!-- PROVAR ADVANCED -->
 
       <div class="cert">
 
@@ -1007,7 +1537,7 @@
       </div>
 
 
-      <!-- Tricentis Level 2 -->
+      <!-- TRICENTIS LEVEL 2 -->
 
       <div class="cert">
 
@@ -1030,7 +1560,7 @@
       </div>
 
 
-      <!-- Tricentis Level 1 -->
+      <!-- TRICENTIS LEVEL 1 -->
 
       <div class="cert">
 
@@ -1052,18 +1582,22 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
-  <!-- Education -->
+  <!-- =======================================================
+       EDUCATION
+  ======================================================== -->
 
   <section id="education">
 
     <h2 class="section-title">
       <span>Education</span>
     </h2>
+
 
     <div class="education">
 
@@ -1080,17 +1614,23 @@
   </section>
 
 
-  <!-- Contact -->
+  <!-- =======================================================
+       CONTACT
+  ======================================================== -->
 
-  <section id="contact" class="contact">
+  <section
+    id="contact"
+    class="contact">
 
     <h2 class="section-title">
       Get In <span>Touch</span>
     </h2>
 
     <p class="contact-subtitle">
-      Have an opportunity or want to connect? Feel free to reach out.
+      Have an opportunity or want to connect?
+      Feel free to reach out.
     </p>
+
 
     <div class="buttons">
 
@@ -1121,11 +1661,21 @@
   </section>
 
 
-  <!-- Footer -->
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
 
   <footer>
+
     © 2026 Jagadeesh S N · Salesforce QA Engineer
+
   </footer>
 
-</body>
-</html>
+
+  <!-- =======================================================
+       BACK TO TOP
+  ======================================================== -->
+
+  <a
+    href="#"
+    class="back
